@@ -1,6 +1,6 @@
 body {
-    background: url(https://c.tenor.com/jDJkh3w0wTAAAAAC/gregzaj1-ln_strike.gif);
-    background-blend-mode: soft-light;
+    background: url(https://c.tenor.com/NVxZ3T04G-oAAAAC/bitcoinliotta.gif);
+    background-blend-mode: light;
     background-size: 350px;
     background-color: #1d1d1d;
 }
@@ -76,7 +76,7 @@ label {
 }
 
 .payment-box {
-    background: url(https://c.tenor.com/NVxZ3T04G-oAAAAC/bitcoinliotta.gif);
+    background: url(https://c.tenor.com/jDJkh3w0wTAAAAAC/gregzaj1-ln_strike.gif);
     background-position: center;
     background-size: cover;
     border-radius: 0 0 5px 5px;
