@@ -1,295 +1,236 @@
+/*  ===========================CREDITS=========================== */
+/*  Custom BTCpay Server CSS template    */
+/*  =========================END CREDITS========================= */
+
+/*  =========================DISCLAIMER========================== */
+/*  Might not be the most efficient or correct way of implementing  */
+/*  CSS. I am not responsable for breaking your website if things */
+/*  go wrong. PEACE / LOVE / BITCOIN                */
+/*  =======================END DISCLAIMER======================== */
+
 body {
-    background: url(https://tenor.com/view/bitcoinliotta-gif-24462917);
-    background-blend-mode: soft-light;
-    background-size: 350px;
-    background-color: #1d1d1d;
+    background: url(http://clipart-library.com/images/6TpoXoLGc.jpg);
+    background-size: 100px;
+    background-color: white;
 }
 
-a {
-    color: #464646;
-}
-a:hover,
-a:active {
-    color: #1f1f1f;
-}
-label {
-    opacity: 1 !important;
+
+/*======BACKGROUND COLOR======*/
+html {
+    background-color: white !important;   /*===BACKGROUND COLOR===*/
 }
 
-/* header */
-.header {
-    background: none;
-    border-radius: 5px 5px 0 0;
+.modal.page {
+    background-color: #4ad4d4;  /*===BACKGROUND COLOR===*/
 }
-.header::after {
-    margin: 5px 0 0 0;
-    content: "Thank you Liotta!";
-    text-shadow: 1px 1px black;
-    font-size: 1.6em;
-    position: absolute;
-    right: 10px;
-}
-.header__icon {
-    margin: 0 !important;
-    padding-top: 5px;
-}
+/*=============================*/
+
+/*=======HEADER SETTINGS=======*/
 .top-header {
-    color: #fff;
-    background: transparent;
+    background-color: white;  /*===HEADER BACKGROUND COLOR===*/
+  border-radius:6px;  /*===ROUNDED CORNER SETTINGS===*/
 }
-.top-header .header {
-    margin-bottom: 1px;
-}
-.top-header > div {
-    background-color: rgba(0, 0, 0, .5) !important;
+
+.top-header .timer-row__progress-bar {
+  border-top: 1px solid #864c24;
+    border-bottom: 1px solid #864c24;
+    background: #4ad4d4;    /*===PROGRESS BAR COLOR===*/
 }
 
 .top-header .timer-row {
-    text-shadow: 1px 1px black;
-}
-.top-header .timer-row__spinner svg {
-    fill: #ffcd82;
-}
-
-/* action button */
-.action-button {
-    background-color: rgba(247, 147, 26, .85);
-    border-color: #c76d00;
-}
-.action-button:hover,
-.action-button:active {
-    background-color: rgba(247, 147, 26, .95);
+    border-top: 1px solid #864c24;  /*===COLORED LINE ABOVE PROGRESS BAR===*/
+  border-bottom: 1px solid #864c24; /*===COLORED LINE ABOVE PROGRESS BAR===*/
+    background: #4ad4d4;  /*===PROGRESS BAR BACKGROUND COLOR===*/
 }
 
-/* payment */
+/*============================*/
+
+/*=====PAY WITH / AMOUNTS=====*/
+.line-items {
+    background-color: #4ad4d4;  /*===BACKGROUND COLOR===*/
+    color: white !important;   /*===TEXT COLOR===*/
+  padding-top: 15px;
+    padding-bottom: 10px;
+    border-top: 1px solid #864c24 !important;
+  border-bottom: 0px solid #864c24;
+}
+
+.buyerTotalLine {
+    border-top: 1px solid #864c24;
+    background-color: white;
+    color: black;
+  padding-top: 15px;
+    padding-bottom: 12px;
+}
+/*==========================*/
+
+/*=======PAYMENT TABS=======*/
 .payment-tabs__slider {
-    background-color: #444;
+  background: #4ad4d4;  /*===SLIDER COLOR===*/
 }
-.payment-tabs__tab {
-    color: #444 !important;
+
+.payment-tabs {
+    background-color: white;  /*===BACKGROUND COLOR===*/
+  color: black;
+    border-top: 1px solid #864c24;  /*===COLORED LINE ABOVE PAYMENT TABS===*/
+  border-bottom: 1px solid #864c24; /*===COLORED LINE BELOW PAYMENT TABS===*/
 }
-.payment-tabs__tab.active {
-    background: rgba(255, 255, 255, .25);
+/*===========================*/
+
+/*===OPEN IN WALLET BUTTON===*/
+.action-button {
+    color: #fff !important;
+    background-image: linear-gradient(to bottom, #4ad4d4, #39c4b6);   /*===BUTTON BACKGROUND COLOR GRADIENT===*/
+  border-color:white;  /*===BUTTON BORDER COLOR===*/
+  box-shadow: 0px 0px 15px -3px #000000;  /*===DROP SHADOW SETTINGS===*/
+  border-radius: 6px;   /*===ROUNDED CORNER SETTINGS===*/
 }
-.payment-tabs__tab:hover {
-    background: rgba(0, 0, 0, .1);
+
+.action-button:hover {
+    background-image: linear-gradient(to top, #4ad4d4, #39c4b6);  /*===HOVER BUTTON BACKGROUND COLOR GRADIENT===*/
+  border-color:#864c24; /*===BUTTON BORDER COLOR===*/
+}
+/*============================*/
+
+/*===BOLT/NODE INFO BUTTONS===*/
+.btnGroupLnd {
+  box-shadow: 0px 0px 15px -3px #000000;  /*===DROP SHADOW SETTINGS===*/
+  background-color:#4ad4d4; /*===BUTTON BACKGROUND COLOR (IF NO GRADIENT IS WANTED DELETE LINE ABOVE THIS)===*/
+  border-color:#fff;  /*===BUTTON BORDER COLOR===*/
+  border-radius: 6px; /*===ROUNDED CORNER SETTINGS===*/
+}
+
+.btnGroupLnd button {
+  background-color:#4ad4d4; /*===BUTTON BACKGROUND COLOR (IF NO GRADIENT IS WANTED DELETE LINE ABOVE THIS)===*/
+  border-color: #fff; /*===BUTTON BORDER COLOR===*/
+}
+
+.btnGroupLnd button.active {
+  background-color:#4ad4d4; /*===BUTTON BACKGROUND COLOR (IF NO GRADIENT IS WANTED DELETE LINE ABOVE THIS)===*/
+  border-color: #fff;   /*===BUTTON BORDER COLOR===*/
+}
+/*===========================*/
+
+/*=====CURRENCY DROPDOWN=====*/
+.payment__currencies {
+  border-radius:6px;  /*===ROUNDED CORNER SETTINGS===*/
+  background-color: #4ad4d4; /*===BACKGROUND COLOR DROPDOWN MENU===*/
+}
+
+.payment__currencies:hover {
+  background: #4ad4d4; /*===MENU HOVER HIGHLIGHT COLOR===*/
+}
+
+.currency-selection {
+    background-color: white;  /*===BACKGROUND COLOR===*/
+    border-bottom: 0px solid #4ad4d4;
+    color: black;  /*===TEXT COLOR===*/
+    padding-top: 15px;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+.vex.vex-theme-btcpay .vex-content  {
+  padding: 1px;
+  border-radius:0px; /*===ROUNDED CORNER SETTINGS===*/
+  box-shadow: 0px 0px 15px -3px #000000; /*===DROP SHADOW SETTINGS===*/
+}
+
+.vexmenu  {
+  background-color:#4ad4d4; /*===BACKGROUND COLOR===*/
+}
+
+.vexmenuitem:hover {
+  background: #fff; /*===MENU BACKGROUND COLOR===*/
+}
+/*===========================*/
+
+/*===QR AND QR BACKGROUND===*/
+.invoice {
+    background-color: white;  /*===MENU BACKGROUND COLOR===*/
+  border-radius: 6px; /*===ROUNDED CORNER SETTINGS===*/
 }
 
 .payment-box {
-    background: url(https://c.tenor.com/jDJkh3w0wTAAAAAC/gregzaj1-ln_strike.gif);
-    background-position: center;
-    background-size: cover;
-    border-radius: 0 0 5px 5px;
+  height:420px; /*===SIZE IMPORTANT BECAUSE HEIGHT LIGHTNING QR CODE + OUTLINE===*/
 }
 
-.payment__currencies {
-    border: 2px solid transparent !important;
-    background: rgba(255, 255, 255, .25);
-}
-.payment__currencies:hover {
-    border: 2px solid transparent !important;
-    background: rgba(0, 0, 0, .1);
-}
-.payment__scan svg {
-    box-shadow: 0 0 0 5px rgba(255, 255, 255, .85);
-}
-.payment__scan svg path {
-    fill: rgba(255, 255, 255, .85);
+.payment__scan {
+  width:276px;
+  height:276px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:5px;
+  margin-top:0px;
+  border: 10px solid #f5f5f7; /*===QR CODE BORDER SIZE/COLOR (LEAVE AS IS FOR QUICK SCANNING)===*/
 }
 
-/* btnGroupLnd */
-.btnGroupLnd {
-    background: none;
-}
-.btnGroupLnd button {
-    border-color: #c76d00 !important;
-    color: rgba(255, 255, 255, .8);
-    background-color: rgba(247, 147, 26, .65);
-}
-.btnGroupLnd button:hover,
-.btnGroupLnd button:active {
-    background-color: rgba(247, 147, 26, .80);
-}
-.btnGroupLnd button.active {
-    background-color: rgba(247, 147, 26, .95);
-}
-.btnGroupLnd button.active:hover,
-.btnGroupLnd button.active:active {
-    background-color: rgba(247, 147, 26, .95);
+.recommended-fee {
+  margin-top:15px;
 }
 
-.manual__step-two__instructions {
-    padding: 15px 10px 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    opacity: 1;
-    background: rgba(255, 255, 255, .8);
-    color: #101010;
+.expired__body {
+    color: black;
 }
+/*==========================*/
 
-.qr_currency_icon {
-    width: 50px;
-    height: 50px;
+/*======COLOR OF LINKS======*/
+a {
+  color: black !important;  /*===LINK COLOR===*/
 }
+/*==========================*/
 
+/*==="COLOR OF SOME TEXTS===*/
+span {
+  color:black; /*===TEXT COLOR===*/
+}
+/*=========================*/
+
+/*=====LANGUAGE SELECT=====*/
+#prettydropdown-DefaultLang ul {
+  color: #4ad4d4 !important; /*  ===TEXT COLOR=== */
+  background-color: white !important;   /*===BACKGROUND COLOR===*/
+}
+/*===========================*/
+
+/*====INSTRUCTIONAL TEXTS====*/
+.manual__step-one__header {
+    color: #fff;  /*===TEXT COLOR===*/
+  opacity: 1;
+}
+.content-faded, .manual__step-one__instructions, .manual__step-two__instructions {
+    color: #fff;  /*===TEXT COLOR===*/
+  opacity: 1;
+}
+/*===========================*/
+
+/*====COPY INFO BOX/TEXTS====*/
 .copyBox {
-    background: rgba(255, 255, 255, .8);
-    color: #101010;
-}
-#recommended-fee {
-    color: white;
-    text-shadow: 1px 1px black;
+  background-color:white;
+  border-color:#864c24;
 }
 
-.order-details > * {
-    color: #444;
-    background: rgba(255, 255, 255, .35);
-    border-color: #444;
-}
-.order-details .line-items {
-    color: #444;
+.copyAmountText {
+  color: black;  /*===TEXT COLOR===*/
 }
 
-.buyerTotalLine .fa-angle-double-down,
-.buyerTotalLine .fa-angle-double-up {
-    padding-bottom: 3px;
-    opacity: .5;
+.copySectionBox label {
+  color: black;  /*===TEXT COLOR===*/
+  opacity: 1;
 }
 
 .separatorGem {
-    background: #4a4a4a;
+  background:#4ad4d4; /*===GEM ICON COLOR===*/
 }
-.close-icon {
-    z-index: 100;
-    top: -40px;
-    right: -50px;
-    color: red;
-    font-size: 2em;
-}
+/*===========================*/
 
-@media screen and (max-width: 575px) {
-    .modal-dialog {
-        margin: 40px;
-    }
+/*====PAYMENT SUCCES PAGE====*/
+/*
+.success-block {
+  background-image: linear-gradient(to bottom, #fbff0000, #fff700f2); /*===GRADIENT BACKGROUND===*//*
 }
-@media screen and (max-width: 400px) {
-    .modal-dialog {
-        margin: 15px;
-    }
+*/
+.success-message {
+  color: black; /* ===TEXT COLOR=== */
 }
-@media screen and (max-width: 350px) {
-    .modal-dialog {
-        margin: 0;
-    }
-}
-
-.modal-content {
-    box-shadow: 0 2px 32px 0 black;
-    border: 2px solid white;
-}
-.modal-content:after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    height: calc(100% + 4px);
-    width: calc(100% + 4px);
-
-    background: linear-gradient(
-        52deg,
-        #f7931a,
-        yellow,
-        transparent,
-        #fff0a7,
-        #f7931a,
-        transparent,
-        white,
-        transparent,
-        #f7931a
-        );
-    filter: blur(15px);
-
-    border-radius: 6px;
-    z-index: -1;
-    background-size: 300% 300%;
-    animation: animatedgradient 10s ease alternate infinite;
-}
-@keyframes animatedgradient {
-    0% {
-        background-position: -140% 50%;
-    }
-    40% {
-        background-position: 20% 50%;
-    }
-    50% {
-        background-position: 75% 50%;
-    }
-    65% {
-        background-position: 25% 50%;
-        filter: blur(25px);
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* footer */
-#prettydropdown-DefaultLang {
-    margin-top: 15px;
-}
-.prettydropdown > ul {
-    background: #7b7b7b;
-    color: white;
-}
-.powered__by__btcpayserver a {
-    color: #a9a9a9 !important;
-}
-
-/* paid */
-.paid .payment-box {
-    background: url(https://c.tenor.com/iVi_8REzPtQAAAAC/bitcoinliotta-laserliotta.gif);
-    background-position: center;
-    background-size: cover;
-}
-.paid .action-button,
-.paid .action-button:hover,
-.paid .action-button:active {
-    background: none;
-    border-color: white;
-}
-.paid .status-icon,
-.paid .timer-row {
-    display: none;
-}
-.paid .success-block {
-    top: 30px;
-}
-.paid .payment-tabs {
-    margin-bottom: 5px;
-    display: none;
-}
-.paid .success-message {
-    color: white;
-    background: hsla(0, 0, 0, .4);
-    padding: 1em;
-    margin: 1em;
-}
-
-/* expired */
-.expired .header {
-    display: none;
-}
-
-.expired .payment-box {
-    filter: invert(1);
-}
-
-.expired .modal-content:after {
-    background: red;
-}
-.expired__body {
-    background: rgba(255, 255, 255, .8);
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 15px;
-}
+ 
